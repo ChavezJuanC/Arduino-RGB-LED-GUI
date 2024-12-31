@@ -23,10 +23,10 @@ Arduino Script
 
 Windows Forms Application
 
-    Clone the repository:
+Clone the repository:
 
-git clone https://github.com/ChavezJuanC/Arduino-RGB-LED-GUI.git
-cd Arduino-RGB-LED-GUI/Arduino RGB LED GUI
+    git clone https://github.com/ChavezJuanC/Arduino-RGB-LED-GUI.git
+    cd Arduino-RGB-LED-GUI/Arduino RGB LED GUI
 
 Restore and build the application:
 
@@ -35,20 +35,20 @@ Restore and build the application:
 
 Usage
 
-    Start the Windows Forms application:
+Start the Windows Forms application:
 
     dotnet run
 
-    Use the GUI to adjust RGB values. The changes will be sent to the Arduino via the selected COM port.
+Use the GUI to adjust RGB values. The changes will be sent to the Arduino via the selected COM port.
 
 Why This Project?
 
 I received an Arduino for Christmas and, while I’m not a big hardware person, I enjoy combining software development with simple circuit designs. Instead of hardcoding RGB values or using the Serial Monitor, I created a GUI with Windows Forms to simplify the process.
-What I Learned
+What I Learned:
 
-    Communicating through COM ports with Arduino using C#'s System.IO.Ports library.
-    Sending data to the correct COM port for dynamic control.
-    Reusing this approach across different programming languages.
+Communicating through COM ports with Arduino using C#'s System.IO.Ports library.
+Sending data to the correct COM port for dynamic control.
+Reusing this approach across different programming languages.
 
 License
 
