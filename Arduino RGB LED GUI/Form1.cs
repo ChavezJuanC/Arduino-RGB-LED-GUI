@@ -20,8 +20,9 @@ namespace Arduino_RGB_LED_GUI
 
         private void MasterForm_Load(object sender, EventArgs e)
         {
-            _serialPort = new SerialPort("COM1", 9600);
+            _serialPort = new SerialPort("COM4", 9600);
             _serialPort.Open();
+            RedValue = "0";
             GreenValue = "0";
             BlueValue = "0";
 
@@ -33,7 +34,7 @@ namespace Arduino_RGB_LED_GUI
         private void RGBSumButton_Click(object sender, EventArgs e)
         {
             //Send data to arduino..
-            string RGB = $"{RedValue},{GreenValue},{BlueValue}";
+            string RGB = $"{RedValue}{GreenValue}{BlueValue}";
             Console.WriteLine(RGB);
             WriteToPort(RGB);
         }
